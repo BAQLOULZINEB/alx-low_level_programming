@@ -3,28 +3,12 @@
 #include "main.h"
 
 
-int print_last_digit(int n)
+int _abs(int c)
 {
-	int m;
-
-	switch (n == INT_MIN)
+	if (c > 0 || c == 0)
 	{
-		case 1:
-			m = 8;
-			_putchar(m + '0');
-			return (m);
-		default:
-			switch (n < 0)
-			{
-				case 1:
-					n = -n;
-					m = n % 10;
-					_putchar(m + '0');
-					return (m);
-				default:
-					m = n % 10;
-					_putchar(m + '0');
-					return (m);
-			}
+		return (c);
 	}
+	else
+	return (c * -1);
 }
